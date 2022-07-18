@@ -19,7 +19,7 @@ header{
     display: flex;
     align-items: center;
 }
-span{
+.header-icon span{
     padding-left: 15px;
     color: white;
     font-size: 24px;
@@ -145,6 +145,10 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.course-detail a{
+            color: red;
+            text-decoration: none;
 }
 .course-duration{
     background-color:#FF4A60;
