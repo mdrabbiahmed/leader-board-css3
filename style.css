@@ -84,15 +84,62 @@ hr{
       color: #562EFF;
 }
       /* course style */
-
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
 .course .course-banner img{
       width: 224px;
       height: 104px;
-} 
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-duration{
+    background-color:#FF4A60;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.fa-star{
+    font-size: 12px;
+}
+
 .fa-star.empty{
       color: #AEAEAE;
 }
 .fa-star.filled{
       color: #FFC014;
+}
+    /* media queries for Pixel 5 */
+
+@media only screen and (max-width:688px) {
+    .players, .blogs, .courses{ 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+
+}
+    
+        /* ipad Mini templete */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
